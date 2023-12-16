@@ -1,0 +1,346 @@
+
+
+   
+
+
+.cp{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    padding: 10PX;
+}
+.cp:hover{
+    color:rgb(181, 14, 14)
+    
+}
+/* .navbar{
+    width: 100%;
+    height: 100px;
+    
+} */
+body{
+    background-image:  linear-gradient(rgba(249, 249, 249, 0.7),rgba(248, 248, 248, 0.7)), url("background\ image.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+}
+/* #w1{
+ text-align:center;
+ margin-top: 12%;
+ font-size: 8vw; 
+ font-weight:bolder;
+ font-style: oblique;
+ font-family: 'Monoton', cursive;
+ color:rgb(143, 43, 23)
+
+} */
+
+
+
+
+
+#booknowOffcanvas{
+    background-image: linear-gradient(rgb(203, 126, 141),rgba(130, 189, 139, 0.7))
+}
+/* #signInOffcanvas{
+    background-image: url("Miraflores\ em\ Lima.jpg");
+    background-size: 100% 100%;
+  height: 200px;
+  width: 15vw;
+} */
+
+input{
+    width: 5vw;
+    margin: auto auto;
+    background-color: rgb(57, 57, 84);
+    
+}
+
+@media(max-width: 263px){
+    input::placeholder {
+    font-size: 5vw;
+    }
+}
+
+@media(max-width: 1462px){
+    input::placeholder {
+    font-size: 10px;
+    }
+}
+/* @media(max-width: 761px){
+    .signbut {
+    font-size: .5vw;
+    }
+} */
+/* @media(max-width: 1041px){
+    .signbut {
+    font-size: .5vw;
+    }
+} */
+
+
+
+/* @media(max-width: 418px){
+    #signInOffcanvas {
+    height: 150px;
+    width: 50px;
+    }
+}
+@media(max-width: 121px){
+    #signInOffcanvas {
+    display: none;
+    }
+} */
+
+
+
+
+.wrapper {
+    width: 100%;
+    height: 46vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+    
+}
+
+.card{
+    height: 300px;
+    width: 300px;
+
+    border-radius: 40%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center !important;
+
+
+}
+
+.card::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: -50%;
+    background-color:rgb(28, 9, 95);
+    transform: skewY(345deg);
+    transition: 1s ease-in
+}
+
+.card:hover::before {
+    top: -70%;
+    transform: skewY(450deg)
+}
+
+.card .image {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.card .image img {
+    max-width: 100%;
+    transition: 2s ease-in
+}
+
+.card:hover .image img {
+    width: 80%
+}
+
+.about-product {
+    position: absolute;
+    color: #fff;
+    bottom: -50px !important;
+    text-align: center;
+    left: 20%;
+    transition: 2s ease-in
+}
+
+.card:hover .about-product {
+    bottom: 20px !important
+}
+
+.buy-now {
+    color: #fff;
+    background-color: #ef5350 !important;
+    border-color: #ef5350 !important;
+    width: 160px;
+    margin-top: 20px
+}
+
+.buy-now:focus {
+    box-shadow: none
+}
+
+.buy-now:hover {
+    color: #2f1a79;
+    background-color: #186a35 !important;
+    border-color: #2a8a75 !important
+}
+
+.slider {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .slider img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .row{
+    width: 100%;
+}
+.foot{
+    
+    background-color:rgb(63, 74, 85);
+    color: white;
+    max-width: 100%;
+}
+
+#basic-addon2 {
+	background: #fe1e4f;
+	color: #fff;
+}
+.ul1{
+    list-style-type: none;
+    
+}
+.f1{
+    text-decoration: none;
+    color:white;
+}
+.f1:hover{
+    color:rgb(111, 111, 198);
+    font-size: medium;
+}
+
+
+
+.icon:hover{
+    background-image:linear-gradient(to bottom right,blue,red,violet);
+  
+  }
+  .icon:hover i{
+    color: white;
+    animation: shake 0.75s;
+  }
+  @keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+    
+  }
+  #foot2{
+    background-color:rgb(33, 41, 50);
+    border: 1px solid rgb(33, 41, 50);
+
+    
+  }
+  .icon-set{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+   
+  }
+.icon{
+    font-size: 3vw;
+   border-radius: 50%;
+}
+.icon i{
+    color:#7f7cd8;
+    padding: 10px;
+}
+#fol{
+    font-family: 'Monoton';
+    text-align: center;
+    font-size: 2vw;
+}
+#fol:hover{
+    color: #fe1e4f;
+
+}
+@media(max-width: 425px){
+    #footerp{
+        font-size: 3vw;
+    }
+}
+/*  .form-group input,#comments, #pickupPoint,#destination,#date {
+    width:250px;
+}  */
+ @media(max-width: 285px){
+    .form-group ,label,input,#comments, #pickupPoint,#destination,#date {
+        font-size: 5vw;
+        width: 80vw;
+    }
+} 
+
+
+
+
+@media(max-width: 425px){
+    #footerp{
+        font-size: 3vw;
+        width: 100%;
+    }
+}
+@media(max-width: 627px){
+    .navbar img{
+        width: 20vw;
+    
+    }
+}
+@media(max-width: 193px){
+    .nav{
+        width: 10vw;
+    
+    }
+}
+@media(max-width: 67px){
+    .navbar-toggler-icon{
+        width: 25vw;
+    
+    }
+}
+@media(max-width: 166px){
+    .f1{
+        font-size: 8vw;
+    
+    }
+}
+@media(max-width: 166px){
+    .gs{
+        font-size: 9vw;
+    
+    }
+}
+@media(max-width: 103px){
+    .subs{
+        font-size: 15vw;
+    
+    }
+}
+@media(max-width: 103px){
+    .icon i{
+       padding: 1px;
+    
+    }
+}
+video{
+    width:100%;
+   
+    }
+
